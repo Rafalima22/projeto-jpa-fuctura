@@ -12,3 +12,5 @@ Projeto Java com Maven implementando JPA/Hibernate e PostgreSQL, contendo opera√
 - PostgreSQL
 - Git/GitHub
 
+Nesse projeto, foi criado um banco de dados onde usei alguns nomes ficticios para uma ideia de como √© uma estrutura de aluno/matricula/disciplina.
+
