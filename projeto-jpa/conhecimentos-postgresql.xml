@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conhecimentos>
+    <titulo>Conhecimentos PostgreSQL - Curso Java</titulo>
+    <autor>Rafael Rodrigues</autor>
+    <descricao>O que este arquivo traz sao fundamentos de SQL visto em aula e também no PDF de apoio de ensino da turma Java2 na Fuctura Escola de Software</descricao>
+    
+    <conceitos-fundamentais>
+        <conceito>
+            <nome>Integração com Banco de Dados</nome>
+            <descricao>Estrutura organizada para armazenar, gerenciar e manipular dados</descricao>
+        </conceito>
+        
+        <conceito>
+            <nome>PostgreSQL</nome>
+            <descricao>Sistema de Gerenciamento de Banco de Dados Relacional de codigo aberto</descricao>
+            <caracteristicas>
+                <caracteristica>Conformidade com padroes SQL</caracteristica>
+            </caracteristicas>
+        </conceito>
+        
+        <conceito>
+            <nome>SGBD</nome>
+            <descricao>Sistema Gerenciador de Banco de Dados</descricao>
+            <funcoes>
+                <funcao>Seguranca</funcao>
+                <funcao>Controle de redundancias</funcao>
+                <funcao>Backups</funcao>
+                <funcao>Integridade dos dados</funcao>
+            </funcoes>
+        </conceito>
+
+        <conceito>
+            <nome>Modelo Entidade-Relacionamento</nome>
+            <descricao>Tecnica de modelagem de dados</descricao>
+        </conceito>
+    </conceitos-fundamentais>
+
+    <sql>
+        <ddl>
+            <comando>CREATE DATABASE</comando>
+            <comando>CREATE TABLE</comando>
+            <comando>ALTER TABLE</comando>
+            <comando>DROP TABLE</comando>
+        </ddl>
+        
+        <dml>
+            <comando>INSERT</comando>
+            <comando>SELECT</comando>
+            <comando>UPDATE</comando>
+            <comando>DELETE</comando>
+        </dml>
+        
+        <clausulas>
+            <clausula>WHERE - Filtra registros</clausula>
+            <clausula>ORDER BY - Ordena resultados</clausula>
+            <clausula>JOIN - Combina tabelas</clausula>
+            <clausula>GROUP BY - Agrupa registros</clausula>
+        </clausulas>
+
+        <constraints>
+            <constraint>PRIMARY KEY</constraint>
+            <constraint>FOREIGN KEY</constraint>
+            <constraint>UNIQUE</constraint>
+            <constraint>NOT NULL</constraint>
+            <constraint>CHECK</constraint>
+        </constraints>
+
+        <joins>
+            <tipo>INNER JOIN</tipo>
+            <tipo>LEFT JOIN</tipo>
+            <tipo>RIGHT JOIN</tipo>
+            <tipo>FULL OUTER JOIN</tipo>
+        </joins>
+    </sql>
+
+    <jdbc>
+        <componentes>
+            <componente>DriverManager</componente>
+            <componente>Connection</componente>
+            <componente>PreparedStatement</componente>
+            <componente>ResultSet</componente>
+        </componentes>
+        
+        <operacoes>
+            <operacao>Estabelecer conexao</operacao>
+            <operacao>Executar comandos SQL</operacao>
+            <operacao>Manipular resultados</operacao>
+            <operacao>Gerenciar transacoes</operacao>
+        </operacoes>
+
+        <excecoes>
+            <excecao>SQLException - Erros de banco de dados</excecao>
+        </excecoes>
+    </jdbc>
+
+    <jpa-hibernate>
+        <conceitos>
+            <conceito>ORM - Mapeamento Objeto-Relacional</conceito>
+            <conceito>Entidades</conceito>
+            <conceito>Contexto de Persistencia</conceito>
+            <conceito>JPQL - Java Persistence Query Language</conceito>
+        </conceitos>
+
+        <anotacoes>
+            <anotacao>@Entity</anotacao>
+            <anotacao>@Table</anotacao>
+            <anotacao>@Id</anotacao>
+            <anotacao>@GeneratedValue</anotacao>
+            <anotacao>@Column</anotacao>
+            <anotacao>@ManyToOne</anotacao>
+            <anotacao>@OneToMany</anotacao>
+            <anotacao>@OneToOne</anotacao>
+            <anotacao>@ManyToMany</anotacao>
+            <anotacao>@JoinColumn</anotacao>
+            <anotacao>@NamedQuery</anotacao>
+        </anotacoes>
+
+        <operacoes-crud>
+            <operacao>persist() - Criar</operacao>
+            <operacao>find() - Ler</operacao>
+            <operacao>merge() - Atualizar</operacao>
+            <operacao>remove() - Deletar</operacao>
+        </operacoes-crud>
+
+        <componentes>
+            <componente>EntityManager - Gerencia entidades</componente>
+            <componente>EntityManagerFactory - Cria EntityManager</componente>
+            <componente>Persistence - Classe principal</componente>
+        </componentes>
+
+        <jpql>
+            <caracteristica>Linguagem orientada a objetos</caracteristica>
+            <caracteristica>Consulta entidades em vez de tabelas</caracteristica>
+            <caracteristica>Sintaxe similar ao SQL</caracteristica>
+        </jpql>
+    </jpa-hibernate>
+
+    <padroes-arquitetura>
+        <padrao>
+            <nome>DAO - Data Access Object</nome>
+            <beneficio>Separa logica de negocio do acesso a dados</beneficio>
+            <beneficio>Facilita manutencao e testes</beneficio>
+        </padrao>
+        
+        <padrao>
+            <nome>Camada de Servico</nome>
+            <beneficio>Implementa regras de negocio</beneficio>
+            <beneficio>Intermediario entre apresentacao e persistencia</beneficio>
+        </padrao>
+    </padroes-arquitetura>
+
+    <maven>
+        <dependencias>
+            <dependencia>postgresql - Driver PostgreSQL</dependencia>
+            <dependencia>hibernate-core - Implementacao JPA</dependencia>
+            <dependencia>jakarta.persistence-api - API JPA</dependencia>
+        </dependencias>
+        
+        <configuracao>
+            <item>pom.xml - Configuracao do projeto</item>
+            <item>Gerenciamento de dependencias</item>
+        </configuracao>
+    </maven>
+
+    <configuracao-jpa>
+        <arquivo>persistence.xml</arquivo>
+        <propriedades>
+            <propriedade>Driver JDBC</propriedade>
+            <propriedade>URL do banco</propriedade>
+            <propriedade>Usuario e senha</propriedade>
+            <propriedade>Dialeto Hibernate</propriedade>
+            <propriedade>hibernate.hbm2ddl.auto</propriedade>
+        </propriedades>
+    </configuracao-jpa>
+
+    <tipos-dados>
+        <postgresql>
+            <tipo>SERIAL - Auto incremento</tipo>
+            <tipo>VARCHAR - Texto variavel</tipo>
+            <tipo>INTEGER - Numeros inteiros</tipo>
+            <tipo>DECIMAL - Numeros decimais</tipo>
+            <tipo>BOOLEAN - Verdadeiro/Falso</tipo>
+            <tipo>DATE - Data</tipo>
+            <tipo>TIMESTAMP - Data e hora</tipo>
+        </postgresql>
+        
+        <java>
+            <tipo>String - VARCHAR</tipo>
+            <tipo>int - INTEGER</tipo>
+            <tipo>Long - SERIAL</tipo>
+            <tipo>double - DECIMAL</tipo>
+            <tipo>boolean - BOOLEAN</tipo>
+            <tipo>LocalDate - DATE</tipo>
+            <tipo>LocalDateTime - TIMESTAMP</tipo>
+        </java>
+    </tipos-dados>
+
+    <normalizacao>
+        <forma-normal>
+            <numero>1FN</numero>
+            <regra>Atributos atomicos</regra>
+        </forma-normal>
+        <forma-normal>
+            <numero>2FN</numero>
+            <regra>Sem dependencias parciais</regra>
+        </forma-normal>
+        <forma-normal>
+            <numero>3FN</numero>
+            <regra>Sem dependencias transitivas</regra>
+        </forma-normal>
+    </normalizacao>
+
+    <exemplos-praticos>
+        <exemplo>ConexaoJDBC - Classe de conexao</exemplo>
+        <exemplo>Entidades - Contato e Compromisso</exemplo>
+        <exemplo>DAO - Data Access Object</exemplo>
+        <exemplo>Servicos - Camada de negocio</exemplo>
+    </exemplos-praticos>
+
+    <boas-praticas>
+        <pratica>Usar PreparedStatement para evitar SQL Injection</pratica>
+        <pratica>Fechar conexoes no finally</pratica>
+        <pratica>Tratamento de excecoes</pratica>
+        <pratica>Validacao de dados</pratica>
+        <pratica>Logs para debug</pratica>
+    </boas-praticas>
+</conhecimentos>
